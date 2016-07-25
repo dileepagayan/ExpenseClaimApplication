@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f5279487-29ca-47e2-8044-83146a04d5d7" solutionId="f5279487-29ca-47e2-8044-83146a04d5d7" resetWebServer="false" sharePointProductVersion="16.0" name="ExpenseClaimApproval" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="67ad3aad-c8db-42d7-a306-20967d025781" />
+    <featureReference itemId="adbeaa1f-a0f4-450d-991d-af107d6324c8" />
+    <featureReference itemId="85a7f687-42a9-4756-b02c-d3e851e7e00c" />
+    <featureReference itemId="48c730db-bdb7-4bcd-8c81-ec8c7ac22818" />
+    <featureReference itemId="886dc454-54a9-4ab6-8670-373c95591cee" />
+    <featureReference itemId="656e09a3-f520-45f2-91fb-b8d3a2d8b12c" />
+    <featureReference itemId="43968ea9-09d4-4b95-a4b3-bf4ccd63ce0f" />
+    <featureReference itemId="88dc360a-b685-4ef7-a1f6-08bafcc0efc2" />
+  </features>
+</package>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{57972580-5b0f-4f0f-b9d3-14e142470a81}"
+       Name="FileName"
+       DisplayName="File Name"
+       Type="Text"
+       Required="FALSE"
+       Group="Claim Attachment Site Columns">
+  </Field>
+</Elements>

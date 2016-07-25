@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d392877f-820f-4a16-a49e-eda0c535b4a8}"
+       Name="ApproverType"
+       DisplayName="Approver Type"
+       Type="Text"
+       Required="FALSE"
+       Group="Approver Site Columns">
+  </Field>
+</Elements>

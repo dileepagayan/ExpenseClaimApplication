@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{cde6381f-099b-4c83-b183-ced61a6d1d6b}"
+       Name="WorkflowStatus"
+       DisplayName="Workflow Status"
+       Type="Text"
+       Required="FALSE"
+       Group="Claim Site Columns">
+  </Field>
+</Elements>

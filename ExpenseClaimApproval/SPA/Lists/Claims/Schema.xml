@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Claims" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Claims" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010000be03719f0d489290be531cc6e5e167" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{3e1df0e6-9b73-47c9-8691-9ff6fdffd6d1}" Name="Amount" /><FieldRef ID="{3a504a5c-2faa-4cff-89ee-fdd0b86d743d}" Name="ClaimDescription" /><FieldRef ID="{c1ca6556-dae4-4083-b9c2-b3b0399000d9}" Name="ClaimID" /><FieldRef ID="{49f196ec-37f3-40ba-a8c8-86601b1c1967}" Name="ClaimStatus" /><FieldRef ID="{e7ccc9e2-4b8e-411d-b236-8531bb0d378c}" Name="CurrentStatus" /><FieldRef ID="{cde6381f-099b-4c83-b183-ced61a6d1d6b}" Name="WorkflowStatus" /><FieldRef ID="{5b21754f-43b6-4b2b-865e-f1ba76a926ac}" Name="DateSubmitted" /><FieldRef ID="{53381aa5-96b7-4f3d-91f6-26aea3ff27dc}" Name="ClaimType" /><FieldRef ID="{cbed1032-cb13-4dea-af1c-a252e93d770e}" Name="Remark" /><FieldRef ID="{d66d8a59-8199-496a-948a-2b0f64d0daf4}" Name="PreviousApprover" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /><ContentType ID="0x0100E8BFDA480F4C430587DB73F920B07BBD" Name="Claim" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{3e1df0e6-9b73-47c9-8691-9ff6fdffd6d1}" DisplayName="Amount" Required="FALSE" Name="Amount" /><FieldRef ID="{3a504a5c-2faa-4cff-89ee-fdd0b86d743d}" DisplayName="Claim Description" Required="FALSE" Name="ClaimDescription" /><FieldRef ID="{c1ca6556-dae4-4083-b9c2-b3b0399000d9}" DisplayName="Claim ID" Required="TRUE" Name="ClaimID" /><FieldRef ID="{49f196ec-37f3-40ba-a8c8-86601b1c1967}" DisplayName="Claim Status" Required="FALSE" Name="ClaimStatus" /><FieldRef ID="{e7ccc9e2-4b8e-411d-b236-8531bb0d378c}" DisplayName="Current Status" Required="FALSE" Name="CurrentStatus" /><FieldRef ID="{cde6381f-099b-4c83-b183-ced61a6d1d6b}" DisplayName="Workflow Status" Required="FALSE" Name="WorkflowStatus" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{3e1df0e6-9b73-47c9-8691-9ff6fdffd6d1}" Name="Amount" DisplayName="Amount" Type="Text" Required="FALSE" Group="Claim Site Columns"></Field><Field ID="{3a504a5c-2faa-4cff-89ee-fdd0b86d743d}" Name="ClaimDescription" DisplayName="Claim Description" Type="Text" Required="FALSE" Group="Claim Site Columns"></Field><Field ID="{c1ca6556-dae4-4083-b9c2-b3b0399000d9}" Name="ClaimID" DisplayName="Claim ID" Type="Text" Required="TRUE" Group="Claim Site Columns" EnforceUniqueValues="TRUE" Indexed="TRUE"></Field><Field ID="{49f196ec-37f3-40ba-a8c8-86601b1c1967}" Name="ClaimStatus" DisplayName="Claim Status" Type="Text" Required="FALSE" Group="Claim Site Columns"></Field><Field ID="{e7ccc9e2-4b8e-411d-b236-8531bb0d378c}" Name="CurrentStatus" DisplayName="Current Status" Type="Text" Required="FALSE" Group="Claim Site Columns"></Field><Field ID="{cde6381f-099b-4c83-b183-ced61a6d1d6b}" Name="WorkflowStatus" DisplayName="Workflow Status" Type="Text" Required="FALSE" Group="Claim Site Columns"></Field><Field Name="DateSubmitted" ID="{5b21754f-43b6-4b2b-865e-f1ba76a926ac}" DisplayName="DateSubmitted" Type="DateTime" /><Field Name="ClaimType" ID="{53381aa5-96b7-4f3d-91f6-26aea3ff27dc}" DisplayName="ClaimType" Type="Lookup" List="Lists/ClaimTypes" ShowField="SubCategory" /><Field ID="{cbed1032-cb13-4dea-af1c-a252e93d770e}" Name="Remark" DisplayName="Remark" Type="Text" Required="FALSE" Group="Approval History Site Columns"></Field><Field Name="PreviousApprover" ID="{d66d8a59-8199-496a-948a-2b0f64d0daf4}" DisplayName="PreviousApprover" Type="User" List="UserInfo" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Amount" /><FieldRef Name="ClaimDescription" /><FieldRef Name="ClaimID" /><FieldRef Name="ClaimStatus" /><FieldRef Name="CurrentStatus" /><FieldRef Name="WorkflowStatus" /><FieldRef Name="DateSubmitted" /><FieldRef Name="ClaimType" /><FieldRef Name="Remark" /><FieldRef Name="PreviousApprover" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01004966133D71DD49B4823E77632AE863D7" Name="ApprovalHistory" Group="ExpenseClaimApproval Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{ccad25d1-bcc7-472c-9f20-f8ed66b50d38}" DisplayName="Approval Status" Required="TRUE" Name="ApprovalStatus" />
+      <FieldRef ID="{cbed1032-cb13-4dea-af1c-a252e93d770e}" DisplayName="Remark" Required="FALSE" Name="Remark" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f5279487-29ca-47e2-8044-83146a04d5d7" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature1\Feature.xml" />
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature2\Feature.xml" />
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature3\Feature.xml" />
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature4\Feature.xml" />
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature5\Feature.xml" />
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature6\Feature.xml" />
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature7\Feature.xml" />
+    <FeatureManifest Location="Occulem.ExpenseClaimApproval_Feature8\Feature.xml" />
+  </FeatureManifests>
+</Solution>

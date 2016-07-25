@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2790262f-61c2-4ed1-bf86-2a393efd7234}"
+       Name="AssignmentType"
+       DisplayName="Assignment Type"
+       Type="Text"
+       Required="FALSE"
+       Group="Assignment Site Columns">
+  </Field>
+</Elements>

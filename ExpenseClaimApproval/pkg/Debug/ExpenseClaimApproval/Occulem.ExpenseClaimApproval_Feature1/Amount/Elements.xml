@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{3e1df0e6-9b73-47c9-8691-9ff6fdffd6d1}"
+       Name="Amount"
+       DisplayName="Amount"
+       Type="Text"
+       Required="FALSE"
+       Group="Claim Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ccad25d1-bcc7-472c-9f20-f8ed66b50d38}"
+       Name="ApprovalStatus"
+       DisplayName="Approval Status"
+       Type="Text"
+       Required="TRUE"
+       Group="Approval History Site Columns">
+  </Field>
+</Elements>

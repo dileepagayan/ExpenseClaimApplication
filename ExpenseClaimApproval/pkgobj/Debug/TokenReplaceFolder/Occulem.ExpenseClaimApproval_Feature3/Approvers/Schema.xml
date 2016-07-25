@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Approvers" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Approvers" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01002f92e68361194077b6be1080eb911e16" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{cd1cc88c-f8a7-45c2-aaad-726e5d8d4fb0}" Name="ApproverDescription" /><FieldRef ID="{7196dce7-cafc-4fa0-8098-4441cfb30565}" Name="ApproverLevel" /><FieldRef ID="{d392877f-820f-4a16-a49e-eda0c535b4a8}" Name="ApproverType" /><FieldRef ID="{6e329b84-e128-426b-a49f-87ddc58b137a}" Name="ClaimType" /><FieldRef ID="{cc8ee0c9-7752-49dc-983b-fec4b12de02b}" Name="Approver" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /><ContentType ID="0x0100773C31FB200F4FC6821CD3974DF4FF8D" Name="Approver" Group="ExpenseClaimApproval Content Types" Description="" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{cd1cc88c-f8a7-45c2-aaad-726e5d8d4fb0}" DisplayName="Approver Description" Required="FALSE" Name="ApproverDescription" /><FieldRef ID="{7196dce7-cafc-4fa0-8098-4441cfb30565}" DisplayName="Approver Level" Required="FALSE" Name="ApproverLevel" /><FieldRef ID="{d392877f-820f-4a16-a49e-eda0c535b4a8}" DisplayName="Approver Type" Required="FALSE" Name="ApproverType" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{cd1cc88c-f8a7-45c2-aaad-726e5d8d4fb0}" Name="ApproverDescription" DisplayName="Approver Description" Type="Text" Required="FALSE" Group="Approver Site Columns"></Field><Field ID="{7196dce7-cafc-4fa0-8098-4441cfb30565}" Name="ApproverLevel" DisplayName="Approver Level" Type="Text" Required="FALSE" Group="Approver Site Columns"></Field><Field ID="{d392877f-820f-4a16-a49e-eda0c535b4a8}" Name="ApproverType" DisplayName="Approver Type" Type="Text" Required="FALSE" Group="Approver Site Columns"></Field><Field Name="ClaimType" ID="{6e329b84-e128-426b-a49f-87ddc58b137a}" DisplayName="ClaimType" Type="Lookup" List="Lists/ClaimTypes" ShowField="SubCategory" /><Field Name="Approver" ID="{cc8ee0c9-7752-49dc-983b-fec4b12de02b}" DisplayName="Approver" Type="User" List="UserInfo" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="ApproverDescription" /><FieldRef Name="ApproverLevel" /><FieldRef Name="ApproverType" /><FieldRef Name="ClaimType" /><FieldRef Name="Approver" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

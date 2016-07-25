@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7196dce7-cafc-4fa0-8098-4441cfb30565}"
+       Name="ApproverLevel"
+       DisplayName="Approver Level"
+       Type="Text"
+       Required="FALSE"
+       Group="Approver Site Columns">
+  </Field>
+</Elements>

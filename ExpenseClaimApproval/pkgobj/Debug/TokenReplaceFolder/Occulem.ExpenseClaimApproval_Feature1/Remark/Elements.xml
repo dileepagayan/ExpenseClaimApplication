@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{cbed1032-cb13-4dea-af1c-a252e93d770e}"
+       Name="Remark"
+       DisplayName="Remark"
+       Type="Text"
+       Required="FALSE"
+       Group="Approval History Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100773C31FB200F4FC6821CD3974DF4FF8D" Name="Approver" Group="ExpenseClaimApproval Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{cd1cc88c-f8a7-45c2-aaad-726e5d8d4fb0}" DisplayName="Approver Description" Required="FALSE" Name="ApproverDescription" />
+      <FieldRef ID="{7196dce7-cafc-4fa0-8098-4441cfb30565}" DisplayName="Approver Level" Required="FALSE" Name="ApproverLevel" />
+      <FieldRef ID="{d392877f-820f-4a16-a49e-eda0c535b4a8}" DisplayName="Approver Type" Required="FALSE" Name="ApproverType" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

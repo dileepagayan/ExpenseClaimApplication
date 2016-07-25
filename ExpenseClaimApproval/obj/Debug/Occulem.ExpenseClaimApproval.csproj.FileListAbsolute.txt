@@ -1,0 +1,8 @@
+C:\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\bin\Debug\ExpenseClaimApproval.pdb
+C:\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\obj\Debug\ExpenseClaimApproval.dll
+C:\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\obj\Debug\ExpenseClaimApproval.pdb
+C:\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\obj\Debug\Occulem.ExpenseClaimApproval.csprojResolveAssemblyReference.cache
+C:\dev\Expense\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\bin\Debug\ExpenseClaimApproval.pdb
+C:\dev\Expense\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\obj\Debug\Occulem.ExpenseClaimApproval.csprojResolveAssemblyReference.cache
+C:\dev\Expense\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\obj\Debug\ExpenseClaimApproval.dll
+C:\dev\Expense\Expense Claim Management\ExpenseClaimApproval\ExpenseClaimApproval\obj\Debug\ExpenseClaimApproval.pdb

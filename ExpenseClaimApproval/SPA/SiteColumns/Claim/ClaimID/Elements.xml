@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c1ca6556-dae4-4083-b9c2-b3b0399000d9}"
+       Name="ClaimID"
+       DisplayName="Claim ID"
+       Type="Text"
+       Required="TRUE"
+       Group="Claim Site Columns"
+       EnforceUniqueValues="TRUE"
+       Indexed="TRUE">
+  </Field>
+</Elements>

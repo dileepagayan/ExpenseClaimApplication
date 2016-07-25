@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100161BB0DA9B3F41758ED26EA60AC002F2" Name="ClaimType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{18c44773-61a3-49a0-b58b-f1faae6adf6f}" DisplayName="Claim Category" Required="FALSE" Name="ClaimCategory" />
+      <FieldRef ID="{7d55f6cd-d289-412c-97c4-8deb5dc32f4d}" DisplayName="Claim Type Decription" Required="FALSE" Name="ClaimTypeDecription" />
+      <FieldRef ID="{833e28b1-9e2e-4b4b-bf12-3c36ef4a5edd}" DisplayName="Price Limit" Required="FALSE" Name="PriceLimit" />
+      <FieldRef ID="{756bfb88-27f2-4550-9947-5018f9807a60}" DisplayName="Sub Category" Required="FALSE" Name="SubCategory" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

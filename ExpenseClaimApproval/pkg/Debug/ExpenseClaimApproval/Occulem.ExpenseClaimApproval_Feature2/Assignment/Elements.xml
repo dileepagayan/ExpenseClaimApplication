@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100616F77AD71C441978473DB1DA0510E69" Name="Assignment" Group="ExpenseClaimApproval Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{2790262f-61c2-4ed1-bf86-2a393efd7234}" DisplayName="Assignment Type" Required="FALSE" Name="AssignmentType" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

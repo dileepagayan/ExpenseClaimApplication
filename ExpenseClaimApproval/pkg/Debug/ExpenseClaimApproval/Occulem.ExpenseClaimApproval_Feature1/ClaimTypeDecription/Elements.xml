@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7d55f6cd-d289-412c-97c4-8deb5dc32f4d}"
+       Name="ClaimTypeDecription"
+       DisplayName="Claim Type Decription"
+       Type="Text"
+       Required="FALSE"
+       Group="Claim Type Site Columns">
+  </Field>
+</Elements>

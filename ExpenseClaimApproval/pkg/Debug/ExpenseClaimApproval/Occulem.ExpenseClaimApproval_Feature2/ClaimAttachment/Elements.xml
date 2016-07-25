@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100117C55B2594840558B6683610F1C52B3" Name="ClaimAttachment" Group="ExpenseClaimApproval Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{57972580-5b0f-4f0f-b9d3-14e142470a81}" DisplayName="File Name" Required="FALSE" Name="FileName" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0E46BB7-2C0A-4059-A40C-7E427246D61D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExpenseClaimApproval</RootNamespace>
+    <AssemblyName>ExpenseClaimApproval</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{1186dba7-7665-44d3-977f-dd371ac58b5c}</AppFeaturePartId>
+    <WspPartId>{8ebd78dd-66ee-48e8-bdf9-2acc096037c0}</WspPartId>
+    <WorkflowPartId>{2dd90b5c-d3f7-4094-9cc5-682ec3ec1b4c}</WorkflowPartId>
+    <CspkgPartId>{ce87d3c1-6b5c-48c1-b1a1-439722a0410f}</CspkgPartId>
+    <SqlPackagePartId>{6f0e214c-e5b9-4628-8efe-ab4b6d740b81}</SqlPackagePartId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="ExpenseClaimApproval\app.js" />
+    <Content Include="ExpenseClaimApproval\controllers\dashboardController.js" />
+    <Content Include="ExpenseClaimApproval\Default.aspx" />
+    <Content Include="ExpenseClaimApproval\Elements.xml" />
+    <Content Include="ExpenseClaimApproval\lib\angular-animate\angular-animate.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-aria\angular-aria.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-datatables\angular-datatables.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\angular-datatables\angular-datatables.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-froala\angular-froala.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-loading-bar\loading-bar.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\angular-loading-bar\loading-bar.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-material.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\angular-material.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-messages\angular-messages.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-route\angular-route.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-trix\angular-trix.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-trix\trix.css" />
+    <Content Include="ExpenseClaimApproval\lib\angular-trix\trix.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular-ui-router\angular-ui-router.js" />
+    <Content Include="ExpenseClaimApproval\lib\angular\angular.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\CustomCSS.css" />
+    <Content Include="ExpenseClaimApproval\lib\datatables\jquery.dataTables.css" />
+    <Content Include="ExpenseClaimApproval\lib\datatables\jquery.dataTables.js" />
+    <Content Include="ExpenseClaimApproval\lib\datatables\sort_asc.png" />
+    <Content Include="ExpenseClaimApproval\lib\datatables\sort_asc_disabled.png" />
+    <Content Include="ExpenseClaimApproval\lib\datatables\sort_both.png" />
+    <Content Include="ExpenseClaimApproval\lib\datatables\sort_desc.png" />
+    <Content Include="ExpenseClaimApproval\lib\datatables\sort_desc_disabled.png" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\align.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\char_counter.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\char_counter.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\code_beautifier.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\code_view.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\code_view.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\colors.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\colors.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\draggable.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\draggable.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\emoticons.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\emoticons.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\entities.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\file.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\file.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\font_family.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\font_size.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\froala_editor.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\froala_editor.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\froala_editor.pkgd.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\froala_editor.pkgd.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\froala_style.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\fullscreen.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\fullscreen.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\image.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\image.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\image_manager.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\image_manager.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\inline_style.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\line_breaker.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\line_breaker.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\link.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\lists.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\paragraph_format.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\paragraph_style.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\quick_insert.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\quick_insert.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\quote.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\save.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\table.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\table.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\url.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\video.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\froala-wysiwyg-editor\video.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\jquery\jquery.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\jspdf\jspdf.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\lf-ng-md-file-input\lf-ng-md-file-input.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\lf-ng-md-file-input\lf-ng-md-file-input.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\rangy\rangy-classapplier.js" />
+    <Content Include="ExpenseClaimApproval\lib\rangy\rangy-core.js" />
+    <Content Include="ExpenseClaimApproval\lib\rangy\rangy-highlighter.js" />
+    <Content Include="ExpenseClaimApproval\lib\rangy\rangy-selectionsaverestore.js" />
+    <Content Include="ExpenseClaimApproval\lib\rangy\rangy-serializer.js" />
+    <Content Include="ExpenseClaimApproval\lib\rangy\rangy-textrange.js" />
+    <Content Include="ExpenseClaimApproval\lib\sp-peoplepicker\sp-peoplepicker.min.css" />
+    <Content Include="ExpenseClaimApproval\lib\sp-peoplepicker\sp-peoplepicker.min.js" />
+    <Content Include="ExpenseClaimApproval\lib\textAngular\textAngular-sanitize.js" />
+    <Content Include="ExpenseClaimApproval\lib\textAngular\textAngular.css" />
+    <Content Include="ExpenseClaimApproval\lib\textAngular\textAngular.js" />
+    <Content Include="ExpenseClaimApproval\lib\textAngular\textAngularSetup.js" />
+    <Content Include="ExpenseClaimApproval\lib\trix\trix.css" />
+    <Content Include="ExpenseClaimApproval\lib\trix\trix.js" />
+    <Content Include="ExpenseClaimApproval\services\dataaccesslayer\sharePointService.js" />
+    <Content Include="ExpenseClaimApproval\services\sharepointservices\applicationLoadService.js" />
+    <Content Include="ExpenseClaimApproval\services\sharepointservices\dashboardSharePointService.js" />
+    <Content Include="ExpenseClaimApproval\services\sharepointservices\helperService.js" />
+    <Content Include="ExpenseClaimApproval\views\dashboard\dashboard.html" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature4\Feature4.Template.xml">
+      <DependentUpon>Feature4.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature5\Feature5.Template.xml">
+      <DependentUpon>Feature5.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature6\Feature6.Template.xml">
+      <DependentUpon>Feature6.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature7\Feature7.Template.xml">
+      <DependentUpon>Feature7.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature8\Feature8.Template.xml">
+      <DependentUpon>Feature8.feature</DependentUpon>
+    </Content>
+    <Content Include="SPA\ContentTypes\ApprovalHistory\Elements.xml" />
+    <Content Include="SPA\ContentTypes\Approver\Elements.xml" />
+    <Content Include="SPA\ContentTypes\Assignment\Elements.xml" />
+    <Content Include="SPA\ContentTypes\ClaimAttachment\Elements.xml" />
+    <Content Include="SPA\ContentTypes\ClaimType\Elements.xml" />
+    <Content Include="SPA\ContentTypes\Claim\Elements.xml" />
+    <Content Include="SPA\Lists\ApprovalHistory\ApprovalHistoryInstance\Elements.xml" />
+    <Content Include="SPA\Lists\ApprovalHistory\Elements.xml" />
+    <Content Include="SPA\Lists\ApprovalHistory\Schema.xml" />
+    <Content Include="SPA\Lists\Approvers\ApproversInstance\Elements.xml" />
+    <Content Include="SPA\Lists\Approvers\Elements.xml" />
+    <Content Include="SPA\Lists\Approvers\Schema.xml" />
+    <Content Include="SPA\Lists\Assignments\AssignmentsInstance\Elements.xml" />
+    <Content Include="SPA\Lists\Assignments\Elements.xml" />
+    <Content Include="SPA\Lists\Assignments\Schema.xml" />
+    <Content Include="SPA\Lists\ClaimAttachments\ClaimAttachmentsInstance\Elements.xml" />
+    <Content Include="SPA\Lists\ClaimAttachments\EditDlg.htm" />
+    <Content Include="SPA\Lists\ClaimAttachments\Elements.xml" />
+    <Content Include="SPA\Lists\ClaimAttachments\FileDlg.htm" />
+    <Content Include="SPA\Lists\ClaimAttachments\Repair.aspx" />
+    <Content Include="SPA\Lists\ClaimAttachments\Schema.xml" />
+    <Content Include="SPA\Lists\ClaimAttachments\Upload.aspx" />
+    <Content Include="SPA\Lists\Claims\ClaimsInstance\Elements.xml" />
+    <Content Include="SPA\Lists\Claims\Elements.xml" />
+    <Content Include="SPA\Lists\Claims\Schema.xml" />
+    <Content Include="SPA\Lists\ClaimTypes\ClaimTypesInstance\Elements.xml" />
+    <Content Include="SPA\Lists\ClaimTypes\Elements.xml" />
+    <Content Include="SPA\Lists\ClaimTypes\Schema.xml" />
+    <Content Include="SPA\SiteColumns\ApprovalHistory\ApprovalStatus\Elements.xml" />
+    <Content Include="SPA\SiteColumns\ApprovalHistory\Remark\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Approver\ApproverDescription\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Approver\ApproverLevel\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Approver\ApproverType\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Assignment\AssignmentType\Elements.xml" />
+    <Content Include="SPA\SiteColumns\ClaimAttachment\FileName\Elements.xml" />
+    <Content Include="SPA\SiteColumns\ClaimType\ClaimCategory\Elements.xml" />
+    <Content Include="SPA\SiteColumns\ClaimType\ClaimTypeDecription\Elements.xml" />
+    <Content Include="SPA\SiteColumns\ClaimType\PriceLimit\Elements.xml" />
+    <Content Include="SPA\SiteColumns\ClaimType\SubCategory\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Claim\Amount\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Claim\ClaimDescription\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Claim\ClaimID\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Claim\ClaimStatus\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Claim\CurrentStatus\Elements.xml" />
+    <Content Include="SPA\SiteColumns\Claim\WorkflowStatus\Elements.xml" />
+    <None Include="bower.json" />
+    <None Include="ExpenseClaimApproval\lib\font-awesome\font-awesome.less" />
+    <None Include="ExpenseClaimApproval\lib\font-awesome\font-awesome.scss" />
+    <None Include="ExpenseClaimApproval\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5917b5a1-4a22-4a84-8df2-bb074e59d2fe}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{67ad3aad-c8db-42d7-a306-20967d025781}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{adbeaa1f-a0f4-450d-991d-af107d6324c8}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{85a7f687-42a9-4756-b02c-d3e851e7e00c}</FeatureId>
+    </None>
+    <None Include="Features\Feature4\Feature4.feature">
+      <FeatureId>{48c730db-bdb7-4bcd-8c81-ec8c7ac22818}</FeatureId>
+    </None>
+    <None Include="Features\Feature5\Feature5.feature">
+      <FeatureId>{886dc454-54a9-4ab6-8670-373c95591cee}</FeatureId>
+    </None>
+    <None Include="Features\Feature6\Feature6.feature">
+      <FeatureId>{656e09a3-f520-45f2-91fb-b8d3a2d8b12c}</FeatureId>
+    </None>
+    <None Include="Features\Feature7\Feature7.feature">
+      <FeatureId>{43968ea9-09d4-4b95-a4b3-bf4ccd63ce0f}</FeatureId>
+    </None>
+    <None Include="Features\Feature8\Feature8.feature">
+      <FeatureId>{88dc360a-b685-4ef7-a1f6-08bafcc0efc2}</FeatureId>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Elements.xml" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{089c8c30-a528-4ab6-bd47-7b2f1011a9bc}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\ContentTypes\ApprovalHistory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5ef2992-5455-4ad2-a57a-131bc07df2b0}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\ContentTypes\Approver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c451727f-3abb-4921-bf3e-0bbfdbf96077}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\ContentTypes\Assignment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1939e1d-19a9-44a3-bc0e-251b6fc43000}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\ContentTypes\ClaimAttachment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ab296cc-ad30-45b6-bdec-0fdf9448dc0b}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\ContentTypes\ClaimType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{667ca8a4-e0c2-4649-b6fa-232c6f14a89d}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\ContentTypes\Claim\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{75053c1a-784d-4c8e-9150-6b23e6353d65}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\ApprovalHistory\ApprovalHistoryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec515599-1812-44d4-8cab-2b5421a6aeda}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\ApprovalHistory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e8a907f9-2773-4f3a-84dd-31a7a74e4b57}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\Approvers\ApproversInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{369aea67-d8b3-462f-9e1f-90c3da9047cf}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\Approvers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{843e94cc-5f8b-42dc-a940-8820cee1d0a2}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\Assignments\AssignmentsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04737da8-d177-4dac-bc72-6319ab2a7b95}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\Assignments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{665a0f8b-0dad-4644-b59d-76eae2750257}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\ClaimAttachments\ClaimAttachmentsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{51845deb-2f7f-4205-94d3-fb1e3406902d}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\ClaimAttachments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8515672-b2d6-4048-9638-4fe258cbf33a}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\Claims\ClaimsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f3917b3e-1023-4a0d-8433-b18da40209f3}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\Claims\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7114ddbe-264c-403b-9a44-4c3a80f53b2a}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\ClaimTypes\ClaimTypesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ff1c82d9-78ef-43de-9564-a5ee7ba566da}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\Lists\ClaimTypes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2759d753-acf4-4ab3-a9c6-bb033db3a331}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\ApprovalHistory\ApprovalStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{458d3297-c12f-4a00-a389-6ffa4b8e3615}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\ApprovalHistory\Remark\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb21aedb-263d-404e-be3b-3c37a3f27ed7}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Approver\ApproverDescription\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6af0f044-b371-4939-ba76-dd012cbced3e}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Approver\ApproverLevel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{958fe93e-4329-4cd9-b935-d3098b39dcba}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Approver\ApproverType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5f20b183-5ad6-4f89-a3c6-aa1313e588a9}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Assignment\AssignmentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8707310f-e230-4610-988b-2747b08a1625}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\ClaimAttachment\FileName\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{426ed81f-5ee1-438c-ade4-87a6bb0e378e}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\ClaimType\ClaimCategory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{758be463-43f8-4c1f-a8db-29609a19dfcf}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\ClaimType\ClaimTypeDecription\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6db53b56-f3e0-4db7-8d10-bdcd270393e3}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\ClaimType\PriceLimit\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85b607eb-f9b8-4c37-a26e-86cae9f55566}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\ClaimType\SubCategory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e3826a6-9937-4223-8504-6c5ac1be1ead}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Claim\Amount\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a2762860-c0a8-4184-a7e5-fcc97212f0fc}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Claim\ClaimDescription\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fb98683d-bdf2-458d-ab2f-1a6a4412fb44}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Claim\ClaimID\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a13c46f8-c081-400b-b581-b9f63ad59912}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Claim\ClaimStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{49924001-c10c-457d-b106-40680b1f55f8}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Claim\CurrentStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6ab8062-658a-4263-8b8c-2c686256982f}</SharePointProjectItemId>
+    </None>
+    <None Include="SPA\SiteColumns\Claim\WorkflowStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{10c51f94-fd66-4ad6-afd8-c3bac13df566}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{f5279487-29ca-47e2-8044-83146a04d5d7}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExpenseClaimApproval\directives\" />
+    <Folder Include="ExpenseClaimApproval\lib\grunt-contrib-jshint\" />
+    <Folder Include="ExpenseClaimApproval\lib\jshint\" />
+    <Folder Include="SPA\WorkFlows\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{49f196ec-37f3-40ba-a8c8-86601b1c1967}"
+       Name="ClaimStatus"
+       DisplayName="Claim Status"
+       Type="Text"
+       Required="FALSE"
+       Group="Claim Site Columns">
+  </Field>
+</Elements>

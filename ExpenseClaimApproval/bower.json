@@ -1,0 +1,85 @@
+{
+  "name": "expense",
+  "authors": [
+    "dileepagayan <dileepagayan@gmail.com>"
+  ],
+  "description": "expense claim approval",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.5",
+    "jshint": "^2.9.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "angular-material": "^1.0.8",
+    "sp-peoplepicker": "^0.1.2",
+    "angular-datatables": "^0.5.4",
+    "lf-ng-md-file-input": "^1.4.6",
+    "textAngular": "^1.5.1",
+    "angular-froala": "^2.3.0",
+    "angular-trix": "^1.0.2",
+    "jspdf": "^1.2.61",
+    "angular-loading-bar": "^0.9.0",
+    "angular-ui-router": "^0.3.1"
+  },
+  "install": {
+    "path": "ExpenseClaimApproval/lib",
+    "sources": {
+      "angular": [
+        "bower_components/angular/angular.min.js"
+      ],
+      "angular-route": [
+        "bower_components/angular-route/angular-route.min.js"
+      ],
+      "jquery": [
+        "bower_components/jquery/dist/jquery.min.js"
+      ],
+      "angular-material": [
+        "bower_components/ngular-material/angular-material.min.js"
+      ],
+      "ui-router": [
+        "bower_components/angular-ui-router/release/angular-ui-router.min.js"
+      ],
+      "angular-loading-bar": [
+        "bower_components/angular-loading-bar/build/loading-bar.min.js",
+        "bower_components/angular-loading-bar/build/loading-bar.min.css"
+      ],
+      "sp-peoplepicker": [
+        "bower_components/sp-peoplepicker/sp-peoplepicker.min.js",
+        "bower_components/sp-peoplepicker/sp-peoplepicker.min.css"
+      ],
+      "data-tables": [
+        "bower_components/datatables/media/js/jquery.dataTables.min.js",
+        "bower_components/datatables/media/js/angular-datatables.min.js",
+        "bower_components/datatables/media/css/dataTables.material.min.js"
+      ],
+      "angular-datatables": [
+        "bower_components/angular-datatables/dist/css/angular-datatables.min.css"
+      ],
+      "lf-ng-md-file-input": [
+        "bower_components/lf-ng-md-file-input/dist/lf-ng-md-file-input.min.css",
+        "bower_components/lf-ng-md-file-input/dist/lf-ng-md-file-input.min.js"
+      ],
+      "angular-trix": [
+        "bower_components/trix/dist/trix.js",
+        "bower_components/angular-trix/dist/angular-trix.min.js",
+        "bower_components/trix/dist/trix.css"
+      ],
+      "jspdf": [
+        "bower_components/jspdf/dist/jspdf.min.js"
+      ],
+      "jszip": [
+        "bower_components/jszip/dist/jszip.min.js"
+      ]
+    }
+  }
+}

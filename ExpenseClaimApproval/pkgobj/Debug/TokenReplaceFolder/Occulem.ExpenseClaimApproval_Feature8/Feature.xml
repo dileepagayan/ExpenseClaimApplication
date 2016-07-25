@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="81901554-8d91-4e37-9a03-47de487f5d19" Scope="Web" Title="Occulem.ExpenseClaimApproval Feature8" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Claim\Elements.xml" />
+    <ElementManifest Location="ClaimsInstance\Elements.xml" />
+    <ElementManifest Location="Claims\Elements.xml" />
+    <ElementFile Location="Claims\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Claim\Elements.xml" />
+        <ElementManifest Location="ClaimsInstance\Elements.xml" />
+        <ElementManifest Location="Claims\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e7ccc9e2-4b8e-411d-b236-8531bb0d378c}"
+       Name="CurrentStatus"
+       DisplayName="Current Status"
+       Type="Text"
+       Required="FALSE"
+       Group="Claim Site Columns">
+  </Field>
+</Elements>

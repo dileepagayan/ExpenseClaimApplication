@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{833e28b1-9e2e-4b4b-bf12-3c36ef4a5edd}"
+       Name="PriceLimit"
+       DisplayName="Price Limit"
+       Type="Text"
+       Required="FALSE"
+       Group="Claim Type Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100E8BFDA480F4C430587DB73F920B07BBD" Name="Claim" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{3e1df0e6-9b73-47c9-8691-9ff6fdffd6d1}" DisplayName="Amount" Required="FALSE" Name="Amount" />
+      <FieldRef ID="{3a504a5c-2faa-4cff-89ee-fdd0b86d743d}" DisplayName="Claim Description" Required="FALSE" Name="ClaimDescription" />
+      <FieldRef ID="{c1ca6556-dae4-4083-b9c2-b3b0399000d9}" DisplayName="Claim ID" Required="TRUE" Name="ClaimID" />
+      <FieldRef ID="{49f196ec-37f3-40ba-a8c8-86601b1c1967}" DisplayName="Claim Status" Required="FALSE" Name="ClaimStatus" />
+      <FieldRef ID="{e7ccc9e2-4b8e-411d-b236-8531bb0d378c}" DisplayName="Current Status" Required="FALSE" Name="CurrentStatus" />
+      <FieldRef ID="{cde6381f-099b-4c83-b183-ced61a6d1d6b}" DisplayName="Workflow Status" Required="FALSE" Name="WorkflowStatus" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
