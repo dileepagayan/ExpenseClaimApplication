@@ -98,6 +98,7 @@
     <ElementFile Location="ExpenseClaimApproval\services\sharepointservices\helperService.js" />
     <ElementFile Location="ExpenseClaimApproval\services\sharepointservices\dashboardSharePointService.js" />
     <ElementFile Location="ExpenseClaimApproval\controllers\dashboardController.js" />
+    <ElementFile Location="ExpenseClaimApproval\controllers\groupsController.js" />
     <ElementManifest Location="SubCategory\Elements.xml" />
     <ElementManifest Location="PriceLimit\Elements.xml" />
     <ElementManifest Location="ClaimTypeDecription\Elements.xml" />

@@ -98,5 +98,8 @@
     <ProjectItemFile Source="services\sharepointservices\helperService.js" Target="ExpenseClaimApproval\services\sharepointservices\" Type="ElementFile" />
     <ProjectItemFile Source="services\sharepointservices\dashboardSharePointService.js" Target="ExpenseClaimApproval\services\sharepointservices\" Type="ElementFile" />
     <ProjectItemFile Source="controllers\dashboardController.js" Target="ExpenseClaimApproval\controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="controllers\groupsController.js" Target="ExpenseClaimApproval\controllers\" Type="ElementFile" />
+    <ProjectItemFile Source="services\sharepointservices\groupService.js" Target="ExpenseClaimApproval\services\sharepointservices\" Type="ElementFile" />
+    <ProjectItemFile Source="views\admin\groups.html" Target="ExpenseClaimApproval\views\admin\" Type="ElementFile" />
   </Files>
 </ProjectItem>

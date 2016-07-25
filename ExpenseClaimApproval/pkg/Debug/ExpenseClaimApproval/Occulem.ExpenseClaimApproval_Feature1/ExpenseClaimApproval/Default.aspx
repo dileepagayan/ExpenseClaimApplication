@@ -68,36 +68,22 @@
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
 
-    <div ng-app="ExpenseClaimApproval" ng-controller="dashboardController">
-        <md-toolbar layout="row">
-          <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button menuBtn">
-            <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
-          </md-button>
-            <br />
-            <br />
-          <h1 layout-align-gt-sm="center" style="color:white;font-weight:bold;font-size:large" class="md-toolbar-tools">Expense Claim Approval Application</h1>
-        </md-toolbar>
-        <div layout="row" flex class="content-wrapper">
-            <md-sidenav style="overflow: hidden; height: 100vh;" layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
-                  <md-list class="muppet-list">
-                    <md-item>
-                      <md-item-content>
-                        <md-button ui-sref="dashboard" >
-                          Dashboard
-                        </md-button>
-                      </md-item-content>
-                    </md-item>  
-                  </md-list>
-             </md-sidenav>
-            <div layout="column" flex class="content-wrapper" id="primary-col">
-                <md-content layout="column" flex class="md-padding">
-                     <div  ui-view >
-
-                     </div>
-                 </md-content>
-            </div>
+    <div ng-app="ExpenseClaimApproval">
+        <div layout="row" layout-padding class="bg-dark-blue nav-dark" layout-align="space-between center">
+                <div>
+                    <md-button  class=" md-primary">Groups</md-button>
+                    <md-button class=" md-primary">Claims</md-button>
+                    <md-button class=" md-primary">Assign Claims</md-button>
+                </div>
         </div>
-    </div>
+        <md-divider></md-divider>
+         <div layout="row">
+             <div flex  ui-view >
+
+             </div>
+         </div>
+        
+     
 
 
 </asp:Content>

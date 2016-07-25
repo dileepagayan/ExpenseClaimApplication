@@ -48,6 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="ExpenseClaimApproval\app.js" />
+    <Content Include="ExpenseClaimApproval\controllers\groupsController.js" />
     <Content Include="ExpenseClaimApproval\controllers\dashboardController.js" />
     <Content Include="ExpenseClaimApproval\Default.aspx" />
     <Content Include="ExpenseClaimApproval\Elements.xml" />
@@ -139,8 +140,10 @@
     <Content Include="ExpenseClaimApproval\lib\trix\trix.js" />
     <Content Include="ExpenseClaimApproval\services\dataaccesslayer\sharePointService.js" />
     <Content Include="ExpenseClaimApproval\services\sharepointservices\applicationLoadService.js" />
+    <Content Include="ExpenseClaimApproval\services\sharepointservices\groupService.js" />
     <Content Include="ExpenseClaimApproval\services\sharepointservices\dashboardSharePointService.js" />
     <Content Include="ExpenseClaimApproval\services\sharepointservices\helperService.js" />
+    <Content Include="ExpenseClaimApproval\views\admin\groups.html" />
     <Content Include="ExpenseClaimApproval\views\dashboard\dashboard.html" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>

@@ -27,6 +27,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
          resolve: {
              sharePointLoad: 'applicationLoadService'
          }
+     }).state('groups', {
+         templateUrl: 'views/admin/groups.html',
+         controller: 'groupsController',
+         url: '/groups',
+         resolve: {
+             sharePointLoad: 'applicationLoadService'
+         }
      });
 });
 

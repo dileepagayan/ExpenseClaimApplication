@@ -958,11 +958,9 @@
                 context.executeQueryAsync(
                     function () {
                         deferred.resolve();
-                        alert("Group Created Successfully");
                     },
                     function (sender, args) {
                         deferred.reject();
-                        alert("Failed to create groups " + args.get_message());
                     });
             });
 
@@ -1182,7 +1180,7 @@
                         "<OrderBy><FieldRef Name='Created' Ascending='FALSE'/></OrderBy>" +
                     "</Query>" +
                 "</View>");
-        }
+                    }
 
 
 

@@ -97,5 +97,8 @@
     <File Path="ExpenseClaimApproval\services\sharepointservices\helperService.js" Url="ExpenseClaimApproval/services/sharepointservices/helperService.js" ReplaceContent="TRUE" />
     <File Path="ExpenseClaimApproval\services\sharepointservices\dashboardSharePointService.js" Url="ExpenseClaimApproval/services/sharepointservices/dashboardSharePointService.js" ReplaceContent="TRUE" />
     <File Path="ExpenseClaimApproval\controllers\dashboardController.js" Url="ExpenseClaimApproval/controllers/dashboardController.js" ReplaceContent="TRUE" />
+    <File Path="ExpenseClaimApproval\controllers\groupsController.js" Url="ExpenseClaimApproval/controllers/groupsController.js" ReplaceContent="TRUE" />
+    <File Path="ExpenseClaimApproval\services\sharepointservices\groupService.js" Url="ExpenseClaimApproval/services/sharepointservices/groupService.js" ReplaceContent="TRUE" />
+    <File Path="ExpenseClaimApproval\views\admin\groups.html" Url="ExpenseClaimApproval/views/admin/groups.html" ReplaceContent="TRUE" />
   </Module>
 </Elements>

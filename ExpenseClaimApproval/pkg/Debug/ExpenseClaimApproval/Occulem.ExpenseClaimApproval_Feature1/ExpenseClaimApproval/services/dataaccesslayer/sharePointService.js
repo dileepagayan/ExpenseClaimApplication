@@ -923,6 +923,51 @@
             membersGRP.set_title(settings.title);
             membersGRP.set_description(settings.description);
 
+            var currentUser = web.get_currentUser();
+            context.load(currentUser);
+            context.load(web, 'Title', 'HasUniqueRoleAssignments');
+
+            context.executeQueryAsync(function () {
+
+
+                if (!web.get_hasUniqueRoleAssignments()) {
+                    web.breakRoleInheritance(true, false);
+                }
+
+                //add group to site gorup collection  
+                var newCreateGroup = groupCollection.add(membersGRP);
+                //Role Definition   
+                var rolDef = web.get_roleDefinitions().getByName(settings.role);
+                var rolDefColl = SP.RoleDefinitionBindingCollection.newObject(context);
+                rolDefColl.add(rolDef);
+
+                // Get the RoleAssignmentCollection for the target web.  
+                var roleAssignments = web.get_roleAssignments();
+                // assign the group to the new RoleDefinitionBindingCollection.  
+                roleAssignments.add(newCreateGroup, rolDefColl);
+                //Set group properties  
+                newCreateGroup.set_allowMembersEditMembership(false);
+                newCreateGroup.set_onlyAllowMembersViewMembership(false);
+                //add currect user to group  
+                if (settings.role == "Edit") {
+                    newCreateGroup.get_users().addUser(currentUser);
+                }
+
+                newCreateGroup.update();
+                context.load(newCreateGroup);
+                context.executeQueryAsync(
+                    function () {
+                        deferred.resolve();
+                        alert("Group Created Successfully");
+                    },
+                    function (sender, args) {
+                        deferred.reject();
+                        alert("Failed to create groups " + args.get_message());
+                    });
+            });
+
+
+
             //var oMembersGRP = web.get_siteGroups().add(membersGRP);
 
             //var rdContribute = web.get_roleDefinitions().getByName(settings.role);
@@ -934,15 +979,7 @@
 
            // var roleAssignmentContribute = assignments.add(oMembersGRP, collContribute);
 
-            context.executeQueryAsync(
-       function () {
-           deferred.resolve();
-           alert("Group Created Successfully");
-       },
-       function (sender, args) {
-           deferred.reject();
-           alert("Failed to create groups " + args.get_message());
-       });
+    
 
             return deferred.promise;
         }
