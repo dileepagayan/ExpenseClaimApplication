@@ -100,5 +100,7 @@
     <File Path="ExpenseClaimApproval\controllers\groupsController.js" Url="ExpenseClaimApproval/controllers/groupsController.js" ReplaceContent="TRUE" />
     <File Path="ExpenseClaimApproval\services\sharepointservices\groupService.js" Url="ExpenseClaimApproval/services/sharepointservices/groupService.js" ReplaceContent="TRUE" />
     <File Path="ExpenseClaimApproval\views\admin\groups.html" Url="ExpenseClaimApproval/views/admin/groups.html" ReplaceContent="TRUE" />
+    <File Path="ExpenseClaimApproval\views\admin\assignUsers.html" Url="ExpenseClaimApproval/views/admin/assignUsers.html" ReplaceContent="TRUE" />
+    <File Path="ExpenseClaimApproval\views\admin\addClaimTypes.html" Url="ExpenseClaimApproval/views/admin/addClaimTypes.html" ReplaceContent="TRUE" />
   </Module>
 </Elements>

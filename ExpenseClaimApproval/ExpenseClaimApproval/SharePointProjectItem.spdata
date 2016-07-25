@@ -101,5 +101,7 @@
     <ProjectItemFile Source="controllers\groupsController.js" Target="ExpenseClaimApproval\controllers\" Type="ElementFile" />
     <ProjectItemFile Source="services\sharepointservices\groupService.js" Target="ExpenseClaimApproval\services\sharepointservices\" Type="ElementFile" />
     <ProjectItemFile Source="views\admin\groups.html" Target="ExpenseClaimApproval\views\admin\" Type="ElementFile" />
+    <ProjectItemFile Source="views\admin\assignUsers.html" Target="ExpenseClaimApproval\views\admin\" Type="ElementFile" />
+    <ProjectItemFile Source="views\admin\addClaimTypes.html" Target="ExpenseClaimApproval\views\admin\" Type="ElementFile" />
   </Files>
 </ProjectItem>

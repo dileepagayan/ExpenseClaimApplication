@@ -143,6 +143,8 @@
     <Content Include="ExpenseClaimApproval\services\sharepointservices\groupService.js" />
     <Content Include="ExpenseClaimApproval\services\sharepointservices\dashboardSharePointService.js" />
     <Content Include="ExpenseClaimApproval\services\sharepointservices\helperService.js" />
+    <Content Include="ExpenseClaimApproval\views\admin\addClaimTypes.html" />
+    <Content Include="ExpenseClaimApproval\views\admin\assignUsers.html" />
     <Content Include="ExpenseClaimApproval\views\admin\groups.html" />
     <Content Include="ExpenseClaimApproval\views\dashboard\dashboard.html" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
