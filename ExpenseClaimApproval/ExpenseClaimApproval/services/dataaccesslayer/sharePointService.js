@@ -47,7 +47,8 @@
             createFolder: createFolder,
             deleteFolder: deleteFolder,
             createSPGroup: createSPGroup,
-            getSPGroups:getSPGroups
+            getSPGroups: getSPGroups,
+            setSPUsers:setSPUsers
         };
 
         return service;
@@ -1014,11 +1015,42 @@
             function fail(sender, args) {
                 deferred.reject(args.get_message() + '\n' + args.get_stackTrace());
             }
-
-
             return deferred.promise;
+        }
 
+        function setSPUsers(options) {
+            var deferred = $q.defer();
 
+            var defObject = {
+                group: false,
+                users: false
+            };
+
+            var settings = $.extend({}, defObject, options);
+
+            if ((!settings.group) && (!settings.users)) {
+                deferred.reject();
+                return deferred.promise;
+            }
+
+            var context = SP.ClientContext.get_current();
+            var siteGroups = context.get_web().get_siteGroups();
+            var group = siteGroups.getByName(settings.group);
+            var user = context.get_web().get_currentUser();
+            var userCollection = group.get_users();
+            userCollection.addUser(user);
+            context.load(user);
+            context.load(group);
+            context.executeQueryAsync(
+       function () {
+           deferred.resolve();
+           alert("User is added successfully to the group");
+       },
+       function (sender, args) {
+           deferred.reject();
+           alert("Failed add user to the group " + args.get_message());
+       });
+            return deferred.promise;
         }
 
         function convertDataURIToBinary(dataURI) {

@@ -67,6 +67,7 @@
                     var options = {};
                     options.title = "Admin";
                     options.description = "Group of administrators on the board";
+                    options.role = "Edit";
                     createGroup(options);
                 }
 
@@ -74,6 +75,7 @@
                     var options = {};
                     options.title = "Approvers";
                     options.description = "Group of the approvers";
+                    options.role = "Edit";
                     createGroup(options);
                 }
 
@@ -81,6 +83,7 @@
                     var options = {};
                     options.title = "Members";
                     options.description = "Group of members on the company";
+                    options.role = "Edit";
                     createGroup(options);
                 }
 
@@ -88,6 +91,7 @@
                     var options = {};
                     options.title = "PaymentHandlers";
                     options.description = "Group of payment handlers";
+                    options.role = "Edit";
                     createGroup(options);
                 }
             },

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="d2513930-95bf-4694-9ae5-ca4d19f16879" Scope="Web" Title="Occulem.ExpenseClaimApproval Feature2" Version="1.0.0.0">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="d2513930-95bf-4694-9ae5-ca4d19f16879" Scope="Web" Title="Occulem.ExpenseClaimApproval Feature2" Version="1.0.0.1">
   <ElementManifests>
     <ElementManifest Location="Approver\Elements.xml" />
     <ElementManifest Location="Assignment\Elements.xml" />
